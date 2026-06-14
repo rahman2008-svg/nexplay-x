@@ -1,0 +1,24 @@
+workflows:
+  android-debug:
+    name: Android Debug Build
+
+    environment:
+      java: 17
+
+    scripts:
+      - name: Grant execute permission
+        script: chmod +x gradlew
+
+      - name: Clean project
+        script: ./gradlew clean
+
+      - name: Build Debug APK
+        script: ./gradlew assembleDebug
+
+    artifacts:
+      - app/build/outputs/**/*.apk
+
+    publishing:
+      email:
+        recipients:
+          - prince.ar.abdur.rahman2008@gmail.com
