@@ -1,0 +1,6 @@
+{
+  "name": "NexPlay X",
+  "description": "Complete offline media hub with advanced video player, folders-based music player, smart photo gallery, storage analyzer, secure private vault, and mini media editor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
